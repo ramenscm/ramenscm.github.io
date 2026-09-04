@@ -1,5 +1,7 @@
 ---
 title: Customize the Favicon
+lang: en
+permalink: /en/customize-the-favicon/
 author: ramen
 date: 2019-08-11 00:34:00 +0800
 categories: [Blogging, Tutorial]

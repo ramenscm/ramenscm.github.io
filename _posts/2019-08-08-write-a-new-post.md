@@ -1,5 +1,7 @@
 ---
 title: Writing a New Post
+lang: en
+permalink: /en/write-a-new-post/
 author: ramen
 date: 2019-08-08 14:10:00 +0800
 categories: [Blogging, Tutorial]
@@ -11,7 +13,15 @@ This tutorial will guide you on how to write a post in the _Chirpy_ template, an
 
 ## Naming and Path
 
-Create a new file named `YYYY-MM-DD-TITLE.EXTENSION`{: .filepath} and put it in the `_posts`{: .filepath} of the root directory. Please note that the `EXTENSION`{: .filepath} must be one of `md`{: .filepath} and `markdown`{: .filepath}. If you want to save time of creating files, please consider using the plugin [`Jekyll-Compose`](https://github.com/jekyll/jekyll-compose) to accomplish this.
+Create one file per language using the matching language directory:
+
+```text
+_posts/
+├── en/YYYY-MM-DD-one.md
+└── jp/YYYY-MM-DD-one.md
+```
+
+Both files must use the same filename and set `lang` to `en` or `jp`. They will be published at `/en/one/` and `/jp/one/`. The `EXTENSION`{: .filepath} must be one of `md`{: .filepath} and `markdown`{: .filepath}. If you want to save time creating files, consider using the plugin [`Jekyll-Compose`](https://github.com/jekyll/jekyll-compose).
 
 ## Front Matter
 
@@ -20,6 +30,7 @@ Basically, you need to fill the [Front Matter](https://jekyllrb.com/docs/front-m
 ```yaml
 ---
 title: TITLE
+lang: en # use jp for the Japanese version
 date: YYYY-MM-DD HH:MM:SS +/-TTTT
 categories: [TOP_CATEGORY, SUB_CATEGORY]
 tags: [TAG]     # TAG names should always be lowercase

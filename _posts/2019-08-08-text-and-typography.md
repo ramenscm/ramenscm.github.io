@@ -1,5 +1,7 @@
 ---
 title: Text and Typography
+lang: en
+permalink: /en/text-and-typography/
 description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
 author: ramen
 date: 2019-08-08 11:33:00 +0800
